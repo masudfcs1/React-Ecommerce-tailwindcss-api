@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 import { FiTrash2 } from "react-icons/fi";
 import CartItem from "./CartItem";
+
 import { SidebarContext } from "../contexts/SidebarContext";
 import { CartContext } from "../contexts/CartContext";
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
 // console.log(useContext(CartContext))
+  const {cart} = useContext(CartContext)
   return (
     <div
       className={` ${
@@ -25,7 +27,9 @@ const Sidebar = () => {
           
         </div>
       </div>
-      <div>Cart Item</div>
+      <div>{ cart.map(item =>{
+        return <CartItem item={item} key={item.id} />
+      }) }</div>
     </div>
   );
 };
