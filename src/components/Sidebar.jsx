@@ -8,7 +8,7 @@ import { CartContext } from "../contexts/CartContext";
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
-console.log(useContext(CartContext))
+// console.log(useContext(CartContext))
   return (
     <div
       className={` ${
@@ -25,6 +25,7 @@ console.log(useContext(CartContext))
           
         </div>
       </div>
+      <div>Cart Item</div>
     </div>
   );
 };
