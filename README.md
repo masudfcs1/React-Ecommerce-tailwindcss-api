@@ -1,1 +1,1 @@
-# ecommerce-shop-starter# React-Ecommerce
+# React-Ecommerce
