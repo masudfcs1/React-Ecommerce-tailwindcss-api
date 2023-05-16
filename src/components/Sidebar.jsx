@@ -35,7 +35,7 @@ const Sidebar = () => {
       </div>
       <div>
         <div className="flex  w-full justify-between items-center ">
-          <div>
+          <div className=" text-[18px] font-semibold  " >
             <span>Total:  </span> $ {parseFloat(total).toFixed(2)}
           </div>
           <div onClick={clearCart} className=" cursor-pointer py-4 bg-red-400 hover:bg-red-700 text-white w-12 h-12 flex justify-center items-center text-xl ">
