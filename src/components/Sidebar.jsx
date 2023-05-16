@@ -41,7 +41,9 @@ const Sidebar = () => {
           <div onClick={clearCart} className=" cursor-pointer py-4 bg-red-400 hover:bg-red-700 text-white w-12 h-12 flex justify-center items-center text-xl ">
             <FiTrash2 />
           </div>
-        </div>
+        </div >
+        <Link to='/' className=" bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium space-y-3 " >View Cart</Link>
+        <Link to='/' className=" bg-primary flex p-4 justify-center items-center text-white w-full font-medium  " >Checkout</Link>
       </div>
     </div>
   );
