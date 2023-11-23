@@ -5,7 +5,7 @@ Live Demo->https://reactecommerce-one.vercel.app/
 
 
 
-React_Education WebApplication
+React-Ecommerce WebApplication
 - ReactJS
 - Tailwind-css
 - api
